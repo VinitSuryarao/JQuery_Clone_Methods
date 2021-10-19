@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // Clone
+               $('#btnClone').click(function(){
+                  $('#bdy h1').clone().prependTo('#bdy2');
+                  $('#bdy p').clone().appendTo('#bdy2');
+               });
+
+              
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy" style="background-color: palegreen;">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <div id="bdy2" style="background-color: pink">
+      <h4> This is Second Div</h4>
+   </div>
+   <button id="btnClone"> Clone</button> 
+</body>
+</html>
